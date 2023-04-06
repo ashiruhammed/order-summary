@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 98%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.project {
+  padding: 1rem;
+  width: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid hsl(225, 100%, 98%);
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  width: 100%;
+}
+
+img.hero-img {
+  width: 100%;
+}
+
+.price,
+aside {
+  text-align: center;
+}
+
+h3 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.first-p {
+  margin-bottom: 17px;
+  padding: 0 9px;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 20px;
+  color: hsl(224, 23%, 55%);
+}
+
+.price-a {
+  background-color: hsl(225, 100%, 98%);
+  margin: 17px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 4px;
+}
+
+strong {
+  color: hsl(223, 47%, 23%);
+}
+
+.music-img {
+  float: left;
+}
+
+.price-p {
+  margin-top: 5px;
+  margin-left: 60px;
+  line-height: 15px;
+}
+
+a {
+  margin-left: 170px;
+  position: relative;
+  bottom: 35px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+aside {
+  margin-top: 15px;
+}
+
+button {
+  background-color: hsl(245, 75%, 52%);
+  padding: 15px 48px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 55px;
+  font-weight: 700;
+  box-shadow: 0 20px 20px 5px #2222;
+}
+
+.aside-p {
+  margin-top: 27px;
+  padding-bottom: 40px;
+}
+
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+.aside-p:active {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: auto;
+  }
+  .project {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 0 50px 4px 50px;
+  }
+
+  .price-p {
+    line-height: 20px;
+  }
+
+  a {
+    margin-left: 234px;
+    position: relative;
+    bottom: 30px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+  }
+
+  button {
+    padding: 20px 70px 20px 70px;
+  }
+
+  aside {
+    padding: 0 50px;
+  }
+
+  h3 {
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+}
